@@ -31,8 +31,6 @@ def searchPosts(page, term):
 def searchComments(page, term):
 	acceptedComments = []
 	commentsList = page.find_all('div', class_='entry')
-	if(len(commentsList) == 0):
-		die(page)
 	commentsList.pop(0) # remove question from comments array
 	
 	for comment in commentsList:
@@ -133,7 +131,7 @@ def main():
 	
 
 # for debigging...like php's die(var_dump())
-def die(exp):
+def 	(exp):
 	print(exp)
 	sys.exit()
 
